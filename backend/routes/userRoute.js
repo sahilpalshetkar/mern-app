@@ -17,8 +17,7 @@ try {
     res.status(201).json(userAdded);
 } catch (error) {
     console.log(error);
-    res.send(400).json({error:error.message})
-  
+    res.send(400).json({ error: error.message });
 }
 });
 
@@ -31,7 +30,7 @@ router.get("/", async(req,res)=> {
          res.status(200).json(showAll);
     } catch (error) {
          console.log(error);
-    res.send(500).json({error:error.message})
+    res.send(500).json({ error:error.message });
     }
 });
 

@@ -13,10 +13,14 @@ const Navbar = () => {
       <ul className="navbar-nav">
         
         <li className="nav-item">
-          <a className="nav-link" href="#">Create Post</a>
+          <a href="/" className="nav-link">
+          Create Post
+          </a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">All Post</a>
+          <a href="/all" className="nav-link" >
+            All Post
+            </a>
         </li>
       </ul>
     </div>
