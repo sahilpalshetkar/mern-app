@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom';
 
 const Create = () => {
 
@@ -7,6 +8,8 @@ const Create = () => {
   const [age, setAge] = useState(0);
 
   const [error,setError] = useState("");
+
+  const navigate= useNavigate();
 
   console.log(name, email, age);
 
@@ -36,6 +39,8 @@ const Create = () => {
       setName("");
       setEmail("");
       setAge(0);
+
+      navigate("/all");
     }
   };
 
@@ -81,8 +86,8 @@ const Create = () => {
 </form>
 
     </div>
-  )
-}
+  );
+};
 
 export default Create
 
