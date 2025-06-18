@@ -36,7 +36,6 @@ const Read = () => {
         setError("");
         getData();
       }, 2000);
-
     }
 
 

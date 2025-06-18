@@ -101,7 +101,7 @@ const handleUpdate = async (e)=> {
     onChange={(e) => setAge(e.target.value)}/>
   </div>
 
-  <button type="submit" className="btn btn-primary">Submit</button>
+  <button type="submit" className="btn btn-primary">Update</button>
 </form>
 
     </div>
